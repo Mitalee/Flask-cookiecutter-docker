@@ -2,4 +2,5 @@ from flask import Blueprint
 
 user = Blueprint('user', __name__)
 
-# from . import views
+## to ensure alembic generates migrations properly
+from . import models
