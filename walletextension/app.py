@@ -18,7 +18,7 @@ def create_app(main=True, debug=True):
     app.config['SECRET_KEY'] = 'secret!'
 
     
-    from walletextension.blueprints.wallet import user
+    from walletextension.blueprints.user import user
     app.register_blueprint(user)
     
     db.init_app(app)
