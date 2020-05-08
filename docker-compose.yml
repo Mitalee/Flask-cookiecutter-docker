@@ -17,7 +17,7 @@ services:
         --access-logfile -
         --log-level=debug
         --reload
-        "blogexample.app:create_app()"
+        "walletextension.app:create_app()"
     env_file:
       - '.env'
     volumes:
